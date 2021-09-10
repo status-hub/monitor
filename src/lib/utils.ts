@@ -1,9 +1,9 @@
 import Log from './logging';
 import { spawnSync } from 'child_process';
 
-const run = (cmd: string, args = [], options = {}) => {
-  const { continueOnFail, ...cmdOptions } = options
-  Log.command(cmdOptions.cwd, cmd, args)
+const run = (cmd: string, args: string[] = [], options: any = {}) => {
+  const { continueOnFail, ...cmdOptions }: any = options
+  Log.command((cmdOptions as any).cwd, cmd, args)
   const prog = spawnSync(cmd, args, cmdOptions)
   if (prog.status !== 0) {
     if (!continueOnFail) {

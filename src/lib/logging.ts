@@ -40,7 +40,7 @@ function warn (message: string) {
 
 function updateStatus (projectUpdateStatus: any) {
   const statusLines = Object.values(projectUpdateStatus).map(entry =>
-    `${chalk.bold(entry.name)} (${entry.ref}): ${chalk.green.italic(entry.phase)}`
+    `${chalk.bold((entry as any).name)} (${(entry as any).ref}): ${chalk.green.italic((entry as any).phase)}`
   )
   logUpdate(statusLines.join(os.EOL))
 }
@@ -52,7 +52,7 @@ function command (dir: string, cmd: string, args: any) {
   console.log(`${cmdArrowStyle('>')} ${cmdCmdStyle(cmd)} ${args.join(' ')}`)
 }
 
-export {
+export default {
   progress,
   status,
   error,
