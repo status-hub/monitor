@@ -11,7 +11,7 @@ export const run = async () => {
   if (!token) throw new Error("GitHub token not found");
   const octokit = getOctokit(token);
 
-  exec('echo', ['hello world'])
+  exec('echo', ['actions test'])
 };
 
 run()
