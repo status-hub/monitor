@@ -3409,7 +3409,10 @@ const run = async () => {
     if (!token)
         throw new Error("GitHub token not found");
     const octokit = github_1.getOctokit(token);
-    utils_1.run('echo', ['actions test']);
+    // Basic instalation
+    utils_1.run('sudo', ['apt', 'update']);
+    utils_1.run('sudo', ['apt', 'install', 'git']);
+    utils_1.run('sudo', ['apt', 'install', 'python3']);
 };
 exports.run = run;
 exports.run()
