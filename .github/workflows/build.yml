@@ -1,8 +1,8 @@
 name: Build CI
 on:
-  push:
-    branches:
-      - master
+  release:
+     [ create ]
+  
 jobs:
   release:
     name: Build and publish
