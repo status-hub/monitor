@@ -3404,7 +3404,7 @@ exports.run = void 0;
 const core_1 = __webpack_require__(470);
 const github_1 = __webpack_require__(469);
 const utils_1 = __webpack_require__(913);
-const token = core_1.getInput("token") || process.env.GH_PAT || process.env.GITHUB_TOKEN;
+const token = core_1.getInput("token") || process.env.ST_TOKEN || process.env.GITHUB_TOKEN;
 const run = async () => {
     if (!token)
         throw new Error("GitHub token not found");
