@@ -3409,7 +3409,7 @@ const run = async () => {
     if (!token)
         throw new Error("GitHub token not found");
     const octokit = github_1.getOctokit(token);
-    utils_1.run('echo', ['hello world']);
+    utils_1.run('echo', ['actions test']);
 };
 exports.run = run;
 exports.run()
