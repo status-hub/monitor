@@ -1,7 +1,7 @@
 {
   "name": "@status-hub/monitor",
-  "version": "1.0.5",
-  "description": "status monitor powered by GitHub actions",
+  "version": "1.0.0",
+  "description": "🛸 status monitor powered by GitHub actions",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
