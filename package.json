@@ -1,7 +1,7 @@
 {
-  "name": "github-actions-starter",
+  "name": "@status-hub/monitor",
   "version": "1.0.5",
-  "description": "Starter for GitHub Actions with TypeScript and automated releases",
+  "description": "status monitor powered by GitHub actions",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/koj-co/action.ts.git"
+    "url": "git+https://github.com/status-hub/monitor.git"
   },
   "keywords": [
     "github",
@@ -19,12 +19,12 @@
     "typescript",
     "starter"
   ],
-  "author": "Anand Chowdhary <mail@anandchowdhary.com>",
+  "author": "maubg-debug <maubg@tutanota.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/koj-co/action.ts/issues"
+    "url": "https://github.com/status-hub/monitor/issues"
   },
-  "homepage": "https://github.com/koj-co/action.ts#readme",
+  "homepage": "https://github.com/status-hub/monitor#readme",
   "devDependencies": {
     "@semantic-release/git": "^9.0.0",
     "@types/jest": "^26.0.14",
