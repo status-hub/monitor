@@ -35,7 +35,7 @@ jobs:
       - name: Build TypeScript
         run: npm run build
       - name: Run test workflow
-      - uses: ./
+        uses: ./
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Build package
