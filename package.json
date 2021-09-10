@@ -36,7 +36,7 @@
     "typescript": "^4.0.3"
   },
   "dependencies": {
-    "@actions/core": "^1.2.6",
+    "@actions/core": "^1.5.0",
     "@actions/github": "^4.0.0",
     "@koj/config": "^1.2.5",
     "chalk": "^4.1.2",
