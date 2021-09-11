@@ -12,10 +12,10 @@ export const run = async () => {
   const octokit = getOctokit(token);
 
   // Basic instalation
-  exec('sudo', ['apt', 'install', 'git'])
-  exec('sudo', ['apt', 'install', 'python3'])
-  exec('sudo', ['apt', 'install', 'pip3'])
-  
+  exec('sudo', ['apt', 'install', 'git', '-y'])
+  exec('sudo', ['apt', 'install', 'python3', '-y'])
+  exec('sudo', ['apt', 'install', 'python3-pip', '-y'])
+
   exec('pip3', ['install', 'status-fetch'])
   exec('status-fetch', ['fetch'])
 };
