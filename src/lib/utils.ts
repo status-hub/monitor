@@ -27,4 +27,5 @@ const runGit = (repoPath: string, gitArgs: any, continueOnFail = false) => {
 
 export {
   run,
+  runGit
 }
