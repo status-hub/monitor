@@ -16,6 +16,7 @@ export const run = async () => {
   exec('sudo', ['apt', 'install', 'python3', '-y'])
   exec('sudo', ['apt', 'install', 'python3-pip', '-y'])
 
+  exec('pip3', ['install', 'setuptools'])
   exec('pip3', ['install', 'status-fetch'])
   exec('status-fetch', ['fetch'])
 };
