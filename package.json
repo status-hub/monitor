@@ -1,6 +1,6 @@
 {
   "name": "@status-hub/monitor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "🛸 status monitor powered by GitHub actions",
   "main": "dist/index.js",
   "scripts": {
