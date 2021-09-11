@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.run = void 0;
+exports.runGit = exports.run = void 0;
 const logging_1 = __importDefault(require("./logging"));
 const child_process_1 = require("child_process");
 const run = (cmd, args = [], options = {}) => {
@@ -29,4 +29,5 @@ const runGit = (repoPath, gitArgs, continueOnFail = false) => {
         return prog.stdout.toString().trim();
     }
 };
+exports.runGit = runGit;
 //# sourceMappingURL=utils.js.map

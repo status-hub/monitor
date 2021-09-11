@@ -3410,9 +3410,12 @@ const run = async () => {
         throw new Error("GitHub token not found");
     const octokit = github_1.getOctokit(token);
     // Basic instalation
-    utils_1.run('sudo', ['apt', 'update']);
-    utils_1.run('sudo', ['apt', 'install', 'git']);
-    utils_1.run('sudo', ['apt', 'install', 'python3']);
+    utils_1.run('sudo', ['apt', 'install', 'git', '-y']);
+    utils_1.run('sudo', ['apt', 'install', 'python3', '-y']);
+    utils_1.run('sudo', ['apt', 'install', 'python3-pip', '-y']);
+    utils_1.run('pip3', ['install', 'setuptools']);
+    utils_1.run('pip3', ['install', 'status-fetch']);
+    utils_1.run('status-fetch', ['fetch']);
 };
 exports.run = run;
 exports.run()
@@ -10507,7 +10510,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.run = void 0;
+exports.runGit = exports.run = void 0;
 const logging_1 = __importDefault(__webpack_require__(582));
 const child_process_1 = __webpack_require__(129);
 const run = (cmd, args = [], options = {}) => {
@@ -10533,6 +10536,7 @@ const runGit = (repoPath, gitArgs, continueOnFail = false) => {
         return prog.stdout.toString().trim();
     }
 };
+exports.runGit = runGit;
 //# sourceMappingURL=utils.js.map
 
 /***/ }),
