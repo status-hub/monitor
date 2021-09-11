@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <sites>
+    <test>
+        <title>
+            Example website
+        </title>
+        <url>
+            https://example.com
+        </url>
+    </test>
+    <google>
+        <title>
+            Google website
+        </title>
+        <url>
+            https://google.com
+        </url>
+    </google>
+    <github>
+        <title>
+            Github website
+        </title>
+        <url>
+            https://github.com
+        </url>
+    </github>
+  </sites>
+</config>
