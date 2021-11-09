@@ -9,7 +9,7 @@ const child_process_1 = require("child_process");
 const run = (cmd, args = [], options = {}) => {
     const { continueOnFail, ...cmdOptions } = options;
     logging_1.default.command(cmdOptions.cwd, cmd, args);
-    const prog = child_process_1.spawnSync(cmd, args, cmdOptions);
+    const prog = (0, child_process_1.spawnSync)(cmd, args, cmdOptions);
     if (prog.status !== 0) {
         if (!continueOnFail) {
             console.log(prog.stdout && prog.stdout.toString());

@@ -36,7 +36,7 @@ function warn(message) {
 }
 function updateStatus(projectUpdateStatus) {
     const statusLines = Object.values(projectUpdateStatus).map(entry => `${chalk_1.default.bold(entry.name)} (${entry.ref}): ${chalk_1.default.green.italic(entry.phase)}`);
-    log_update_1.default(statusLines.join(os_1.default.EOL));
+    (0, log_update_1.default)(statusLines.join(os_1.default.EOL));
 }
 function command(dir, cmd, args) {
     console.log(divider);
