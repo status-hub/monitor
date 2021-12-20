@@ -39,7 +39,7 @@
     "@actions/core": "^1.6.0",
     "@actions/github": "^4.0.0",
     "@koj/config": "^1.2.5",
-    "chalk": "^4.1.2",
+    "chalk": "^5.0.0",
     "log-update": "^5.0.0",
     "os": "^0.1.2"
   },
